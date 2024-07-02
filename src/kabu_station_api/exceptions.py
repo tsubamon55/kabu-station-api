@@ -1,0 +1,2 @@
+class KabuStationApiException(Exception):
+    pass
