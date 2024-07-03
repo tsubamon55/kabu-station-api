@@ -5,7 +5,7 @@ setup(
     version='0.2.0',
     author='tsubamon55',
     author_email='tsubamon55@gmail.com',
-    description='package test',
+    description='kabu-station-api',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/tsubamon55/kabu-station-api',
