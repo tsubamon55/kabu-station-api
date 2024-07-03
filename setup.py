@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='package_test',
+    name='kabu-station-api',
     version='0.2.0',
     author='tsubamon55',
     author_email='tsubamon55@gmail.com',
