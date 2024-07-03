@@ -60,6 +60,24 @@ class Info(object):
         self.order_volume = 0
         self.order_value = 0
 
+    @property
+    def ss(self):
+        resp = []
+        for i, q in enumerate(self.bids):
+            if i == 0:
+                resp.append({
+                    "price": q['Price'],
+                    'remaining_size': q['Qty'],
+                    'taken_size': self.order_volume,
+                })
+            else:
+                resp.append({
+                    "price": q['Price'],
+                    'remaining_size': q['Qty'],
+                    'taken_size': 0,
+                })
+        return resp
+
 
 class OrderBook(object):
     def __init__(self, *quotes):
